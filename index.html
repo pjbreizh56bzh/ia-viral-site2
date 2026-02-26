@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ViraIA — Contenu IA Viral</title>
+  <meta name="description" content="Les articles IA les plus partagés : tech, finance, productivité et marketing.">
+  <meta property="og:title" content="ViraIA — Contenu IA Viral">
+  <meta property="og:description" content="Les articles IA les plus partagés du moment.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="nav-brand">
+        <span class="logo">⚡ ViraIA</span>
+        <span class="tagline">Contenu IA viral</span>
+      </div>
+      <div class="nav-links">
+        <a href="#" data-filter="all" class="nav-link active">Tout</a>
+        <a href="#" data-filter="ia" class="nav-link">🤖 IA</a>
+        <a href="#" data-filter="finance" class="nav-link">💰 Finance</a>
+        <a href="#" data-filter="productivite" class="nav-link">🚀 Productivité</a>
+        <a href="#" data-filter="tech" class="nav-link">💡 Tech</a>
+        <a href="#" data-filter="marketing" class="nav-link">🎯 Marketing</a>
+      </div>
+      <div class="nav-actions">
+        <input type="text" id="searchInput" placeholder="🔍 Rechercher..." class="search-input">
+        <button id="themeToggle" class="theme-btn" title="Changer le thème">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="heroSection"></section>
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Articles <span class="gradient-text">en tendance</span></h2>
+        <div class="category-tabs" id="categoryTabs">
+          <button class="tab active" data-filter="all">Tout</button>
+          <button class="tab" data-filter="ia">🤖 IA</button>
+          <button class="tab" data-filter="finance">💰 Finance</button>
+          <button class="tab" data-filter="productivite">🚀 Productivité</button>
+          <button class="tab" data-filter="tech">💡 Tech</button>
+          <button class="tab" data-filter="marketing">🎯 Marketing</button>
+        </div>
+      </div>
+      <div class="articles-grid" id="articlesGrid"></div>
+      <div class="newsletter-section">
+        <div class="newsletter-badge">📬 Newsletter gratuite</div>
+        <h2>Reçois les articles viraux avant tout le monde</h2>
+        <p>Chaque semaine, les 5 contenus IA les plus partagés directement dans ta boîte mail.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="ton@email.com" class="newsletter-input" required>
+          <button type="submit" class="btn-primary">S'abonner gratuitement</button>
+        </form>
+        <p class="newsletter-note">✅ 0 spam · Désinscription en 1 clic · 4 800+ abonnés</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <span class="logo">⚡ ViraIA</span>
+        <p>Le meilleur contenu IA viral, curé et amplifié par l'intelligence artificielle.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Catégories</h4>
+        <a href="#" onclick="setFilter('ia');return false;">🤖 Intelligence Artificielle</a>
+        <a href="#" onclick="setFilter('finance');return false;">💰 Finance &amp; Revenus</a>
+        <a href="#" onclick="setFilter('productivite');return false;">🚀 Productivité</a>
+        <a href="#" onclick="setFilter('tech');return false;">💡 Tech &amp; Innovation</a>
+        <a href="#" onclick="setFilter('marketing');return false;">🎯 Marketing</a>
+      </div>
+      <div class="footer-links">
+        <h4>À propos</h4>
+        <a href="#">À propos de ViraIA</a>
+        <a href="#">Newsletter</a>
+        <a href="#">Contact</a>
+        <a href="#">Mentions légales</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 ViraIA — Contenu curé par IA 🤖 | Fait avec ❤️ en France</p>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="articleModal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
