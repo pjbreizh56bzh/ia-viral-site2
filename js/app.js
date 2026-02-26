@@ -2,7 +2,7 @@
 // ViraIA — Application principale
 // ===================================================
 
-const articles = [
+let articles = [
   {
     id: 1,
     slug: "chatgpt-remplace-metiers-2025",
@@ -34,366 +34,204 @@ const articles = [
       </ul>
       <h3>La question que tu dois te poser</h3>
       <p>Ce n'est pas "mon métier va-t-il disparaître ?" mais plutôt <strong>"comment puis-je utiliser l'IA pour faire mon travail 10x mieux ?"</strong></p>
-      <p>Les professionnels qui maîtrisent l'IA deviennent indispensables. Ceux qui l'ignorent deviennent remplaçables.</p>
       <blockquote>"L'IA ne remplacera pas les humains. Mais les humains qui utilisent l'IA remplaceront ceux qui ne l'utilisent pas." — Jensen Huang, CEO NVIDIA</blockquote>
     `,
-    category: "ia",
-    categoryLabel: "Intelligence Artificielle",
-    readTime: 6,
-    date: "24 Fév 2026",
-    views: "52.4k",
-    shares: "18.2k",
+    category: "ia", categoryLabel: "Intelligence Artificielle",
+    readTime: 6, date: "24 Fév 2026", views: "52.4k", shares: "18.2k",
     image: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80",
-    featured: true,
-    tags: ["emploi", "avenir", "chatgpt"]
+    featured: true, tags: ["emploi", "avenir", "chatgpt"]
   },
   {
-    id: 2,
-    slug: "5000-euros-ia-methode",
+    id: 2, slug: "5000-euros-ia-methode",
     title: "5 000€ en un mois avec l'IA : la méthode exacte",
     excerpt: "Thomas, développeur reconverti, révèle comment il génère 5 000€/mois en vendant des services IA. Voici son processus étape par étape.",
     content: `
       <p>Thomas avait 32 ans, un CDI dans une boîte de logistique, et un salaire de 2 400€ net. En janvier 2025, il a découvert une façon de monétiser l'IA. En avril, il gagnait 5 000€. En décembre, il avait quitté son CDI.</p>
-      <p>Voici exactement ce qu'il a fait.</p>
       <h3>Étape 1 : Trouver un problème récurrent</h3>
       <p>Thomas s'est concentré sur un problème qu'il connaissait bien : <strong>les PME qui ont besoin de contenu mais n'ont pas le budget pour une agence</strong>.</p>
-      <p>Une agence facture 1 500-3 000€ pour un audit SEO + 10 articles. Une PME avec 500€ de budget est bloquée. Thomas a créé une offre à 490€ qui délivre :</p>
-      <ul>
-        <li>1 audit SEO complet (généré + vérifié avec IA)</li>
-        <li>10 articles optimisés SEO (rédigés avec Claude + vérifiés par Thomas)</li>
-        <li>30 posts réseaux sociaux</li>
-        <li>1 newsletter mensuelle</li>
-      </ul>
+      <p>Son offre à 490€ livrait : 1 audit SEO, 10 articles optimisés, 30 posts réseaux sociaux, 1 newsletter mensuelle.</p>
       <h3>Étape 2 : Automatiser avec les bons outils</h3>
-      <p>Son stack IA coûte 150€/mois :</p>
       <ul>
         <li><strong>Claude Pro</strong> (20$/mois) — Rédaction principale</li>
-        <li><strong>ChatGPT Plus</strong> (20$/mois) — Validation et comparaison</li>
-        <li><strong>SEMrush</strong> (100€/mois) — Recherche de mots-clés</li>
+        <li><strong>ChatGPT Plus</strong> (20$/mois) — Validation</li>
+        <li><strong>SEMrush</strong> (100€/mois) — Mots-clés</li>
         <li><strong>Canva Pro</strong> (13€/mois) — Visuels</li>
       </ul>
       <h3>Étape 3 : Le processus de production</h3>
-      <p>Pour chaque client, Thomas passe :</p>
-      <ul>
-        <li>2h pour l'audit SEO (vs 15h manuellement)</li>
-        <li>30 min par article (vs 3h manuellement)</li>
-        <li>15 min pour les posts réseaux sociaux</li>
-      </ul>
-      <p><strong>Total : 9h de travail par client pour 490€</strong> → 54€/heure</p>
+      <p>2h pour l'audit SEO · 30 min par article · 15 min pour les posts.<br><strong>Total : 9h de travail par client pour 490€ = 54€/heure</strong></p>
       <h3>Étape 4 : Trouver ses premiers clients</h3>
-      <p>Thomas a commencé avec 3 canaux :</p>
-      <ol>
-        <li><strong>LinkedIn</strong> — Il publiait ses résultats clients (avant/après SEO)</li>
-        <li><strong>Malt</strong> — Profil freelance avec les nouveaux services</li>
-        <li><strong>Réseau perso</strong> — Ses anciens collègues dans des PME</li>
-      </ol>
-      <p>En un mois, il avait 10 clients à 490€ = <strong>4 900€</strong>. Avec quelques services additionnels : <strong>5 200€</strong>.</p>
-      <h3>Ce que Thomas dit maintenant</h3>
-      <blockquote>"L'IA ne m'a pas remplacé. Elle m'a rendu 10x plus productif et m'a permis de proposer des prix que mes concurrents ne peuvent pas matcher tout en gagnant plus."</blockquote>
-      <p>Sa recommandation : <strong>commence avec un seul service, deviens excellent dessus, puis diversifie.</strong></p>
+      <p>LinkedIn (résultats avant/après) + Malt + réseau perso. En un mois : 10 clients = <strong>5 200€</strong>.</p>
+      <blockquote>"L'IA ne m'a pas remplacé. Elle m'a rendu 10x plus productif." — Thomas</blockquote>
     `,
-    category: "finance",
-    categoryLabel: "Finance & Revenus",
-    readTime: 7,
-    date: "22 Fév 2026",
-    views: "38.7k",
-    shares: "14.3k",
+    category: "finance", categoryLabel: "Finance & Revenus",
+    readTime: 7, date: "22 Fév 2026", views: "38.7k", shares: "14.3k",
     image: "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=800&q=80",
-    featured: false,
-    tags: ["revenus", "freelance", "argent"]
+    featured: false, tags: ["revenus", "freelance", "argent"]
   },
   {
-    id: 3,
-    slug: "7-outils-ia-15h-semaine",
+    id: 3, slug: "7-outils-ia-15h-semaine",
     title: "7 outils IA qui vont te faire gagner 15h par semaine",
     excerpt: "Ces outils IA transforment 15h de tâches répétitives en 30 minutes de travail. Aucun ne coûte plus de 20€/mois.",
     content: `
-      <p>La productivité n'est plus une question de discipline. C'est une question d'outils. Voici les 7 outils IA qui ont transformé la semaine de travail de milliers de professionnels.</p>
+      <p>Voici les 7 outils IA qui ont transformé la semaine de travail de milliers de professionnels.</p>
       <h3>1. Otter.ai — Transcription automatique (3h économisées)</h3>
-      <p>Fini les prises de notes en réunion. Otter transcrit, résume et extrait les action items de toutes tes réunions automatiquement.</p>
-      <p><strong>Prix :</strong> Gratuit jusqu'à 300 min/mois | Pro : 10€/mois</p>
-      <h3>2. Notion AI — Documentation et synthèse (2h économisées)</h3>
-      <p>Génère des documents, résume des réunions, crée des plans de projet. Directement intégré à Notion.</p>
-      <p><strong>Prix :</strong> 10€/mois (inclus dans Notion Plus)</p>
+      <p>Transcrit, résume et extrait les action items de toutes tes réunions. <strong>Prix :</strong> Gratuit jusqu'à 300 min/mois</p>
+      <h3>2. Notion AI — Documentation (2h économisées)</h3>
+      <p>Génère des documents, résume des réunions. <strong>Prix :</strong> 10€/mois</p>
       <h3>3. Perplexity Pro — Recherche web (2h économisées)</h3>
-      <p>Remplace 2h de recherches Google par 10 minutes de questions précises avec sources vérifiées.</p>
-      <p><strong>Prix :</strong> 20$/mois</p>
-      <h3>4. Make (ex-Integromat) — Automatisation (3h économisées)</h3>
-      <p>Connecte tous tes outils entre eux. Exemple : email entrant → extraction d'info → ajout dans CRM → notification Slack. Sans coder.</p>
-      <p><strong>Prix :</strong> Gratuit jusqu'à 1 000 opérations/mois</p>
+      <p>Remplace 2h de recherches Google par 10 minutes. <strong>Prix :</strong> 20$/mois</p>
+      <h3>4. Make — Automatisation (3h économisées)</h3>
+      <p>Connecte tous tes outils sans coder. <strong>Prix :</strong> Gratuit jusqu'à 1 000 opérations/mois</p>
       <h3>5. LanguageTool — Correction (1h économisée)</h3>
-      <p>Corrige, reformule et améliore tous tes textes en temps réel. Indispensable pour les emails professionnels.</p>
-      <p><strong>Prix :</strong> Gratuit | Premium : 12€/mois</p>
+      <p>Corrige et améliore tous tes textes en temps réel. <strong>Prix :</strong> Gratuit</p>
       <h3>6. Superhuman — Email IA (2h économisées)</h3>
-      <p>L'IA priorise tes emails, génère des réponses, et te libère la inbox en 30 min au lieu de 2h30.</p>
-      <p><strong>Prix :</strong> 30$/mois</p>
+      <p>L'IA priorise tes emails, génère des réponses. <strong>Prix :</strong> 30$/mois</p>
       <h3>7. Midjourney — Visuels (2h économisées)</h3>
-      <p>Crée des visuels professionnels pour tes présentations, posts et documents en quelques secondes.</p>
-      <p><strong>Prix :</strong> 10$/mois (Basic)</p>
+      <p>Crée des visuels professionnels en secondes. <strong>Prix :</strong> 10$/mois</p>
       <h3>Le calcul</h3>
-      <p>Budget total : ~85€/mois<br>Temps économisé : 15h/semaine<br>Si ton temps vaut 30€/h : <strong>1 800€ de valeur économisée par mois</strong><br>ROI : <strong>2 000%+</strong></p>
+      <p>Budget : ~85€/mois · Temps économisé : 15h/semaine · ROI : <strong>2 000%+</strong></p>
     `,
-    category: "productivite",
-    categoryLabel: "Productivité",
-    readTime: 5,
-    date: "20 Fév 2026",
-    views: "29.1k",
-    shares: "11.6k",
+    category: "productivite", categoryLabel: "Productivité",
+    readTime: 5, date: "20 Fév 2026", views: "29.1k", shares: "11.6k",
     image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80",
-    featured: false,
-    tags: ["outils", "ia", "travail"]
+    featured: false, tags: ["outils", "ia", "travail"]
   },
   {
-    id: 4,
-    slug: "claude-vs-chatgpt-vs-gemini-2026",
+    id: 4, slug: "claude-vs-chatgpt-vs-gemini-2026",
     title: "Claude vs ChatGPT vs Gemini : le comparatif honnête de 2026",
     excerpt: "On a testé les 3 grands modèles IA pendant 30 jours sur des cas d'usage réels. Les résultats sont surprenants.",
     content: `
-      <p>Après 30 jours de tests intensifs sur 15 cas d'usage différents, voici notre comparatif honnête des 3 grandes IA conversationnelles de 2026.</p>
-      <h3>Méthode de test</h3>
-      <p>Nous avons évalué sur 5 critères : rédaction longue forme, code et débogage, analyse et synthèse, créativité, précision factuelle.</p>
+      <p>Après 30 jours de tests intensifs sur 15 cas d'usage différents, voici notre comparatif honnête des 3 grandes IA de 2026.</p>
       <h3>🏆 Claude — Meilleur pour la rédaction et l'analyse</h3>
-      <ul>
-        <li>Rédaction la plus naturelle et nuancée</li>
-        <li>Excellente compréhension des instructions complexes</li>
-        <li>Très bon en code (souvent meilleur que GPT-4)</li>
-        <li>Moins d'hallucinations sur les faits</li>
-        <li>Fenêtre de contexte de 200k tokens</li>
-      </ul>
-      <p><strong>Points faibles :</strong> Pas de génération d'images native, pas accès web sans plugin<br><strong>Prix :</strong> 20$/mois (Claude Pro)</p>
+      <ul><li>Rédaction la plus naturelle et nuancée</li><li>Excellente compréhension des instructions complexes</li><li>Très bon en code</li><li>Moins d'hallucinations</li><li>200k tokens de contexte</li></ul>
+      <p><strong>Prix :</strong> 20$/mois (Claude Pro)</p>
       <h3>🥈 ChatGPT Plus — Le plus polyvalent</h3>
-      <ul>
-        <li>Génération d'images intégrée (DALL-E 3)</li>
-        <li>Navigation web en temps réel</li>
-        <li>Marketplace de GPTs personnalisés</li>
-        <li>Mode vocal avancé</li>
-      </ul>
-      <p><strong>Points faibles :</strong> Rédaction parfois plus générique, davantage d'hallucinations<br><strong>Prix :</strong> 20$/mois</p>
+      <ul><li>Génération d'images (DALL-E 3)</li><li>Navigation web en temps réel</li><li>Marketplace de GPTs</li><li>Mode vocal avancé</li></ul>
+      <p><strong>Prix :</strong> 20$/mois</p>
       <h3>🥉 Gemini Advanced — Meilleure intégration Google</h3>
-      <ul>
-        <li>Intégration parfaite avec Google Workspace</li>
-        <li>Accès temps réel à Google Search</li>
-        <li>Gemini dans Gmail, Docs, Sheets</li>
-      </ul>
-      <p><strong>Points faibles :</strong> Rédaction moins naturelle, parfois trop prudent<br><strong>Prix :</strong> 22€/mois</p>
+      <ul><li>Intégration Google Workspace</li><li>Accès temps réel à Google Search</li><li>Gemini dans Gmail, Docs, Sheets</li></ul>
+      <p><strong>Prix :</strong> 22€/mois</p>
       <h3>Notre verdict</h3>
-      <p><strong>Si tu n'en prends qu'un :</strong> Commence avec Claude Pro. Meilleure qualité de rédaction, moins d'hallucinations, excellent en code.</p>
       <p><strong>Combinaison optimale :</strong> Claude Pro + ChatGPT Plus. On couvre 95% des cas d'usage professionnels.</p>
     `,
-    category: "ia",
-    categoryLabel: "Intelligence Artificielle",
-    readTime: 8,
-    date: "18 Fév 2026",
-    views: "61.3k",
-    shares: "22.7k",
+    category: "ia", categoryLabel: "Intelligence Artificielle",
+    readTime: 8, date: "18 Fév 2026", views: "61.3k", shares: "22.7k",
     image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80",
-    featured: false,
-    tags: ["claude", "chatgpt", "gemini"]
+    featured: false, tags: ["claude", "chatgpt", "gemini"]
   },
   {
-    id: 5,
-    slug: "revenu-passif-ia-verite",
+    id: 5, slug: "revenu-passif-ia-verite",
     title: "Revenu passif avec l'IA : ce que personne ne te dit vraiment",
-    excerpt: "Les gurus en vendent du rêve. Voici la réalité du revenu passif IA : ce qui marche, ce qui ne marche pas, et ce que ça demande vraiment.",
+    excerpt: "Les gurus en vendent du rêve. Voici la réalité du revenu passif IA : ce qui marche, ce qui ne marche pas.",
     content: `
-      <p>TikTok, YouTube, les newsletters : tout le monde vend du "revenu passif avec l'IA". La réalité est plus nuancée. Voici ce que personne ne te dit.</p>
-      <h3>La vérité n°1 : Le "passif" n'est jamais vraiment passif</h3>
-      <p>Tout revenu dit "passif" nécessite un investissement initial massif — en temps, en argent, ou les deux. La différence avec un revenu actif, c'est que le ratio <strong>temps investi / argent généré</strong> s'améliore avec le temps.</p>
-      <h3>Ce qui marche vraiment avec l'IA</h3>
-      <h4>✅ Les sites de contenu/niche (6-18 mois pour décoller)</h4>
-      <p>Créer des sites thématiques avec du contenu généré par IA, optimisé SEO. Une fois le site établi, les articles génèrent du trafic et des revenus publicitaires ou d'affiliation en continu.</p>
-      <p><strong>Réaliste :</strong> 300-2 000€/mois après 12-18 mois<br><strong>Investissement :</strong> 5-10h/semaine pendant 12 mois minimum</p>
-      <h4>✅ Les produits numériques automatisés (3-6 mois)</h4>
-      <p>Ebooks, templates, cours en ligne créés avec l'IA et vendus sur Gumroad, Notion Market, etc. L'IA réduit le temps de création de 80%.</p>
-      <p><strong>Réaliste :</strong> 200-1 500€/mois si tu cibles bien</p>
-      <h4>✅ Les micro-SaaS IA en no-code</h4>
-      <p>Créer un petit outil IA avec Bubble ou FlutterFlow + API Claude/OpenAI. Facturer 9-29€/mois par utilisateur.</p>
-      <p><strong>Réaliste :</strong> 500-5 000€/mois avec 50-200 utilisateurs</p>
-      <h3>Ce qui ne marche pas (ou très peu)</h3>
-      <h4>❌ Les channels YouTube 100% IA sans valeur ajoutée</h4>
-      <p>YouTube pénalise de plus en plus les contenus auto-générés sans valeur éditoriale. Les CPM ont chuté de 60% sur ces chaînes.</p>
-      <h4>❌ Les e-books génériques</h4>
-      <p>Le marché est saturé. Un e-book sur "comment utiliser ChatGPT" se vend moins de 5€ maintenant.</p>
+      <p>Tout le monde vend du "revenu passif avec l'IA". La réalité est plus nuancée.</p>
+      <h3>Ce qui marche vraiment</h3>
+      <h4>✅ Sites de contenu/niche (6-18 mois)</h4>
+      <p>Sites thématiques avec contenu IA optimisé SEO. <strong>Réaliste :</strong> 300-2 000€/mois après 12-18 mois</p>
+      <h4>✅ Produits numériques automatisés</h4>
+      <p>Ebooks, templates, cours créés avec l'IA. <strong>Réaliste :</strong> 200-1 500€/mois</p>
+      <h4>✅ Micro-SaaS IA en no-code</h4>
+      <p>Outil IA avec Bubble + API Claude. <strong>Réaliste :</strong> 500-5 000€/mois avec 50-200 utilisateurs</p>
+      <h3>Ce qui ne marche pas</h3>
+      <h4>❌ YouTube 100% IA sans valeur ajoutée</h4>
+      <p>YouTube pénalise les contenus auto-générés. CPM en chute de 60%.</p>
+      <h4>❌ E-books génériques</h4>
+      <p>Marché saturé. Se vend moins de 5€ maintenant.</p>
       <h3>La vraie formule</h3>
       <p><strong>Revenus passifs IA = Niche spécifique + Contenu de qualité + Distribution + Patience</strong></p>
-      <p>L'IA accélère la création. Elle ne remplace pas la stratégie.</p>
     `,
-    category: "finance",
-    categoryLabel: "Finance & Revenus",
-    readTime: 9,
-    date: "15 Fév 2026",
-    views: "44.8k",
-    shares: "16.1k",
+    category: "finance", categoryLabel: "Finance & Revenus",
+    readTime: 9, date: "15 Fév 2026", views: "44.8k", shares: "16.1k",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
-    featured: false,
-    tags: ["revenu passif", "finance", "réalité"]
+    featured: false, tags: ["revenu passif", "finance"]
   },
   {
-    id: 6,
-    slug: "apple-intelligence-fonctions-cachees",
+    id: 6, slug: "apple-intelligence-fonctions-cachees",
     title: "Apple Intelligence : les 8 fonctions cachées que personne n'utilise",
     excerpt: "Apple Intelligence est déjà sur ton iPhone. Mais 90% des utilisateurs ignorent ses fonctions les plus puissantes.",
     content: `
-      <p>Apple Intelligence est disponible depuis iOS 18.1. La plupart des gens connaissent la réécriture de texte et la génération d'images. Voici les 8 fonctions que personne n'utilise mais qui changent tout.</p>
-      <h3>1. Priority Notifications</h3>
-      <p>Apple Intelligence analyse tes habitudes et place en haut les notifications qui comptent vraiment pour toi.</p>
-      <p><strong>Activer :</strong> Réglages → Notifications → Priority Notifications</p>
-      <h3>2. Isolation de la voix en appel</h3>
-      <p>L'IA supprime le bruit de fond en temps réel lors des appels. Bruits de rue, café, clavier — tout disparaît pour ton interlocuteur.</p>
-      <p><strong>Activer :</strong> Réglages → FaceTime → Isolation de la voix</p>
-      <h3>3. Smart Reply dans Mail</h3>
-      <p>Mail analyse le contexte de ta conversation et propose 3 réponses complètes et contextuelles. Bien au-delà des suggestions basiques.</p>
-      <h3>4. Résumé d'article Safari</h3>
-      <p>Un bouton discret en haut de chaque article dans Safari résume le contenu en 3-5 points clés. Parfait pour lire plus vite.</p>
-      <h3>5. Siri peut agir dans les apps</h3>
-      <p>Le nouveau Siri peut effectuer des actions complexes dans tes apps : "Envoie à Marie la dernière photo que j'ai prise ce matin".</p>
-      <h3>6. Transcription automatique des mémos vocaux</h3>
-      <p>Dans l'app Notes et Mémos vocaux, tous tes enregistrements sont automatiquement transcrits et résumés.</p>
-      <h3>7. Assistant de rédaction universel</h3>
-      <p>Sélectionne n'importe quel texte dans n'importe quelle app → Apple Intelligence → améliore, raccourcis, reformule.</p>
-      <h3>8. Image Playground</h3>
-      <p>Génère des images directement depuis Messages, Notes ou Keynote. Pas besoin d'app tierce.</p>
-      <p><strong>Compatibilité :</strong> iPhone 15 Pro / iPhone 16 et versions ultérieures, iOS 18.1+</p>
+      <p>Voici les 8 fonctions Apple Intelligence que personne n'utilise mais qui changent tout.</p>
+      <h3>1. Priority Notifications</h3><p>L'IA analyse tes habitudes et trie les notifications importantes. <em>Réglages → Notifications</em></p>
+      <h3>2. Isolation de la voix en appel</h3><p>Supprime le bruit de fond en temps réel. <em>Réglages → FaceTime</em></p>
+      <h3>3. Smart Reply dans Mail</h3><p>Propose 3 réponses complètes et contextuelles.</p>
+      <h3>4. Résumé d'article Safari</h3><p>Résume tout article en 3-5 points clés en un clic.</p>
+      <h3>5. Siri peut agir dans les apps</h3><p>"Envoie à Marie la dernière photo que j'ai prise ce matin" — ça marche vraiment.</p>
+      <h3>6. Transcription automatique des mémos</h3><p>Tous tes enregistrements sont transcrits et résumés automatiquement.</p>
+      <h3>7. Assistant de rédaction universel</h3><p>Sélectionne n'importe quel texte → Apple Intelligence → améliore, raccourcis, reformule.</p>
+      <h3>8. Image Playground</h3><p>Génère des images depuis Messages, Notes ou Keynote. Pas besoin d'app tierce.</p>
+      <p><strong>Compatibilité :</strong> iPhone 15 Pro / iPhone 16, iOS 18.1+</p>
     `,
-    category: "tech",
-    categoryLabel: "Tech & Innovation",
-    readTime: 6,
-    date: "12 Fév 2026",
-    views: "33.5k",
-    shares: "9.8k",
+    category: "tech", categoryLabel: "Tech & Innovation",
+    readTime: 6, date: "12 Fév 2026", views: "33.5k", shares: "9.8k",
     image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?w=800&q=80",
-    featured: false,
-    tags: ["apple", "iphone", "ia"]
+    featured: false, tags: ["apple", "iphone", "ia"]
   },
   {
-    id: 7,
-    slug: "0-followers-10k-strategie-ia",
+    id: 7, slug: "0-followers-10k-strategie-ia",
     title: "0 followers → 10 000€/mois : la stratégie IA de ce créateur",
-    excerpt: "Kevin a commencé sans audience. 14 mois plus tard, il gagne 10k€/mois. Sa stratégie repose entièrement sur l'IA et le contenu automatisé.",
+    excerpt: "Kevin a commencé sans audience. 14 mois plus tard, il gagne 10k€/mois grâce à l'IA et au contenu automatisé.",
     content: `
-      <p>Kevin avait 34 ans, un blog abandonné depuis 3 ans, et 0 followers sur les réseaux. Aujourd'hui, il gagne 10 000€/mois. Voici exactement comment il l'a fait.</p>
-      <h3>Le point de départ</h3>
-      <p>Kevin travaillait dans l'assurance. Passionné par la finance personnelle, il voulait créer du contenu mais "n'avait jamais le temps". En mars 2024, il décide de tout faire différemment : <strong>l'IA fera 80% du travail</strong>.</p>
+      <p>Kevin avait 0 followers. Aujourd'hui : 10 000€/mois. Voici exactement comment.</p>
       <h3>La stratégie en 4 phases</h3>
-      <h4>Phase 1 : Le choix de niche (mois 1)</h4>
-      <p>Kevin a utilisé Perplexity + ChatGPT pour analyser les niches rentables avec peu de concurrence. Il a choisi : <strong>la finance pour les 30-40 ans en reconversion professionnelle</strong>.</p>
-      <h4>Phase 2 : Le système de contenu IA (mois 2-4)</h4>
-      <p>Pipeline de production :</p>
-      <ol>
-        <li>Perplexity trouve les sujets trending en finance</li>
-        <li>Claude rédige les articles (1h → 5 min)</li>
-        <li>Canva AI génère les visuels</li>
-        <li>Buffer publie automatiquement sur LinkedIn, Instagram, Twitter</li>
-      </ol>
-      <p><strong>Production :</strong> 1 article long + 7 posts/semaine, en 2h de travail total</p>
-      <h4>Phase 3 : La monétisation (mois 5-8)</h4>
-      <ul>
-        <li><strong>Coaching individuel :</strong> 300€/session (4 sessions/mois = 1 200€)</li>
-        <li><strong>Programme en ligne "Reconversion Rich" :</strong> 497€ (15 ventes/mois = 7 455€)</li>
-        <li><strong>Affiliation :</strong> 500-800€/mois</li>
-      </ul>
-      <h4>Phase 4 : La croissance organique (mois 9-14)</h4>
-      <p>Ses articles ont commencé à ranker sur Google. Le bouche-à-oreille a pris le relais. Il a atteint 12 000 abonnés newsletter et 28 000 followers LinkedIn.</p>
-      <h3>Ce que Kevin recommande</h3>
-      <blockquote>"Ne cherche pas l'audience. Cherche d'abord une transformation précise que tu peux offrir. L'audience viendra quand les résultats de tes clients parleront pour toi."</blockquote>
-      <p>Son conseil : <strong>crée 90 jours de contenu avant de penser à monétiser</strong>.</p>
+      <h4>Phase 1 : Niche précise</h4>
+      <p>Niche choisie avec Perplexity + ChatGPT : <strong>finance pour les 30-40 ans en reconversion professionnelle</strong>.</p>
+      <h4>Phase 2 : Pipeline de contenu IA</h4>
+      <ol><li>Perplexity → sujets trending</li><li>Claude → rédaction articles</li><li>Canva AI → visuels</li><li>Buffer → publication automatique</li></ol>
+      <p><strong>Résultat :</strong> 1 article + 7 posts/semaine en 2h de travail</p>
+      <h4>Phase 3 : Monétisation</h4>
+      <ul><li>Coaching 300€/session → 1 200€/mois</li><li>Programme en ligne 497€ × 15 = 7 455€/mois</li><li>Affiliation : 800€/mois</li></ul>
+      <h4>Phase 4 : Croissance organique</h4>
+      <p>12 000 abonnés newsletter · 28 000 followers LinkedIn après 14 mois.</p>
+      <blockquote>"Crée 90 jours de contenu avant de penser à monétiser." — Kevin</blockquote>
     `,
-    category: "marketing",
-    categoryLabel: "Marketing",
-    readTime: 8,
-    date: "10 Fév 2026",
-    views: "56.2k",
-    shares: "20.4k",
+    category: "marketing", categoryLabel: "Marketing",
+    readTime: 8, date: "10 Fév 2026", views: "56.2k", shares: "20.4k",
     image: "https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=800&q=80",
-    featured: false,
-    tags: ["créateur", "audience", "stratégie"]
+    featured: false, tags: ["créateur", "audience", "stratégie"]
   },
   {
-    id: 8,
-    slug: "methode-4-heures-deep-work",
+    id: 8, slug: "methode-4-heures-deep-work",
     title: "La méthode des 4 heures : travailler moins, gagner beaucoup plus",
     excerpt: "La méthode que les entrepreneurs IA utilisent pour concentrer leur productivité sur 4 heures de travail profond par jour.",
     content: `
-      <p>Des études en neurosciences montrent que le cerveau humain ne peut maintenir un travail profond (deep work) que 3 à 4 heures par jour. Le reste du temps, on fait de l'occupation — emails, réunions, tâches administratives.</p>
-      <p>La question n'est pas "comment travailler 8h efficacement" mais <strong>"comment concentrer les 4h vraiment productives ?"</strong></p>
+      <p>Le cerveau humain ne peut maintenir un travail profond que 3 à 4 heures par jour. Voici comment les utiliser au maximum.</p>
       <h3>La méthode en 5 étapes</h3>
-      <h4>1. Identifier tes 20% de tâches qui génèrent 80% de tes résultats</h4>
-      <p>Pendant 1 semaine, trace tout ce que tu fais. Puis classe par impact réel sur tes revenus/objectifs. Tu découvriras que 2-4 types de tâches génèrent la majorité de tes résultats.</p>
-      <h4>2. Automatiser tout ce qui peut l'être</h4>
-      <ul>
-        <li>Emails de routine → Claude rédige, tu valides</li>
-        <li>Rapports récurrents → Make automatise</li>
-        <li>Recherches web → Perplexity résume</li>
-        <li>Prises de notes → Otter transcrit</li>
-      </ul>
-      <h4>3. Protéger 4 blocs de deep work par semaine</h4>
-      <p>Bloque 4 plages de 3h dans ton agenda. Pendant ces plages : <strong>zero notification, zero email, zero réunion</strong>.</p>
-      <h4>4. Batching des tâches similaires</h4>
-      <p>Regroupe les mêmes types de tâches. Réponds aux emails seulement à 9h et 17h. Fait toutes tes réunions le mardi et jeudi. Crée tout ton contenu le lundi matin.</p>
-      <h4>5. La règle des 2 minutes + l'IA</h4>
-      <p>Tout ce qui prend moins de 2 minutes → fais-le immédiatement. Tout le reste → automatise ou délègue.</p>
-      <h3>Agenda type</h3>
-      <ul>
-        <li><strong>7h-10h :</strong> Deep work (tâche à haute valeur)</li>
-        <li><strong>10h-11h :</strong> Emails + tâches admin (avec IA)</li>
-        <li><strong>11h-13h :</strong> Réunions / calls clients</li>
-        <li><strong>13h-17h :</strong> Tâches gérées par agents IA</li>
-      </ul>
+      <h4>1. Identifier tes 20% de tâches à 80% de résultats</h4>
+      <p>Trace tout pendant 1 semaine. 2-4 types de tâches génèrent l'essentiel de tes résultats.</p>
+      <h4>2. Automatiser avec l'IA</h4>
+      <ul><li>Emails → Claude rédige, tu valides</li><li>Rapports → Make automatise</li><li>Recherches → Perplexity résume</li><li>Notes → Otter transcrit</li></ul>
+      <h4>3. Protéger 4 blocs de deep work</h4>
+      <p>4 plages de 3h/semaine. Zero notification, zero email, zero réunion pendant ces blocs.</p>
+      <h4>4. Batching</h4>
+      <p>Emails uniquement à 9h et 17h · Réunions le mardi et jeudi · Contenu le lundi matin.</p>
+      <h4>5. La règle des 2 minutes</h4>
+      <p>Moins de 2 min → fais-le maintenant. Sinon → automatise, planifie ou délègue.</p>
     `,
-    category: "productivite",
-    categoryLabel: "Productivité",
-    readTime: 7,
-    date: "8 Fév 2026",
-    views: "27.3k",
-    shares: "10.2k",
+    category: "productivite", categoryLabel: "Productivité",
+    readTime: 7, date: "8 Fév 2026", views: "27.3k", shares: "10.2k",
     image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80",
-    featured: false,
-    tags: ["deep work", "méthode", "efficacité"]
+    featured: false, tags: ["deep work", "méthode", "efficacité"]
   },
   {
-    id: 9,
-    slug: "sora-2-videos-realistes",
+    id: 9, slug: "sora-2-videos-realistes",
     title: "Sora 2 : l'IA génère des vidéos indiscernables du réel",
-    excerpt: "OpenAI vient de lancer Sora 2. Les vidéos générées sont si réalistes qu'il est impossible de les distinguer du vrai. Ce que ça change pour les créateurs.",
+    excerpt: "Les vidéos de Sora 2 sont si réalistes qu'il est impossible de les distinguer du vrai. Ce que ça change pour les créateurs.",
     content: `
-      <p>OpenAI a lancé Sora 2 en janvier 2026. Si la version originale impressionnait déjà, la nouvelle version franchit un cap : les vidéos générées sont, dans la plupart des cas, <strong>indiscernables de vidéos filmées pour l'œil humain</strong>.</p>
-      <h3>Ce que Sora 2 peut faire</h3>
-      <ul>
-        <li>Vidéos jusqu'à 2 minutes en résolution 4K</li>
-        <li>Cohérence physique parfaite (personnages, lumière, mouvements)</li>
-        <li>Extension de vidéos existantes</li>
-        <li>Inpainting vidéo (modifier une partie d'une vidéo)</li>
-        <li>Génération à partir d'images stills</li>
-        <li>Synchronisation labiale automatique</li>
-      </ul>
-      <h3>Ce que ça change pour les créateurs</h3>
-      <h4>Pour les YouTubers</h4>
-      <p>Créer des vidéos sans apparaître à l'écran. Un YouTuber peut générer des b-roll, des animations, des reconstitutions historiques — sans équipe de production.</p>
-      <p><strong>Économie estimée :</strong> 5 000-50 000€ par production</p>
-      <h4>Pour les agences de publicité</h4>
-      <p>Les spots publicitaires simples peuvent être générés en quelques heures. Les agences qui s'adaptent réduiront leurs coûts de 60-80%.</p>
-      <h4>Pour les indépendants</h4>
-      <p>Un freelance seul peut maintenant livrer des vidéos de qualité studio. Une nouvelle catégorie émerge : le "AI Video Producer".</p>
-      <h3>Les limites actuelles</h3>
-      <ul>
-        <li>Les mains restent parfois problématiques</li>
-        <li>Les textes dans les vidéos sont souvent incorrects</li>
-        <li>Accès encore limité (liste d'attente)</li>
-        <li>Prix : 200$/mois pour l'accès Pro</li>
-      </ul>
-      <h3>L'enjeu de la désinformation</h3>
-      <p>La puissance de Sora 2 soulève des questions sérieuses sur la distinction entre vidéos réelles et générées. OpenAI intègre un watermark invisible dans chaque vidéo, mais des experts soulignent que ce système peut être contourné.</p>
-      <blockquote>"Nous entrons dans une ère où voir ne signifie plus nécessairement croire." — Sam Altman, CEO OpenAI</blockquote>
+      <p>Sora 2 franchit un cap : les vidéos générées sont <strong>indiscernables de vidéos filmées pour l'œil humain</strong>.</p>
+      <h3>Capacités</h3>
+      <ul><li>Vidéos jusqu'à 2 minutes en 4K</li><li>Cohérence physique parfaite</li><li>Extension de vidéos existantes</li><li>Inpainting vidéo</li><li>Synchronisation labiale automatique</li></ul>
+      <h3>Impact sur les créateurs</h3>
+      <h4>YouTubers</h4><p>B-roll, animations, reconstitutions historiques sans équipe. <strong>Économie : 5 000-50 000€ par production</strong></p>
+      <h4>Agences pub</h4><p>Spots publicitaires en quelques heures. Réduction des coûts de 60-80%.</p>
+      <h4>Freelances</h4><p>Qualité studio en solo. Nouveau métier : "AI Video Producer".</p>
+      <h3>Limites</h3>
+      <ul><li>Mains parfois problématiques</li><li>Textes souvent incorrects</li><li>Accès limité · Prix : 200$/mois Pro</li></ul>
+      <blockquote>"Nous entrons dans une ère où voir ne signifie plus nécessairement croire." — Sam Altman</blockquote>
     `,
-    category: "ia",
-    categoryLabel: "Intelligence Artificielle",
-    readTime: 6,
-    date: "5 Fév 2026",
-    views: "71.9k",
-    shares: "28.3k",
+    category: "ia", categoryLabel: "Intelligence Artificielle",
+    readTime: 6, date: "5 Fév 2026", views: "71.9k", shares: "28.3k",
     image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&q=80",
-    featured: false,
-    tags: ["sora", "vidéo", "openai"]
+    featured: false, tags: ["sora", "vidéo", "openai"]
   }
 ];
 
@@ -436,17 +274,14 @@ function getUrl(id) {
 // ===================================================
 function shareToTwitter(id) {
   const a = articles.find(x => x.id === id);
-  const url = encodeURIComponent(getUrl(id));
-  const text = encodeURIComponent(a.title + " 🔥");
-  window.open("https://twitter.com/intent/tweet?text=" + text + "&url=" + url, "_blank");
+  window.open("https://twitter.com/intent/tweet?text=" + encodeURIComponent(a.title + " 🔥") + "&url=" + encodeURIComponent(getUrl(id)), "_blank");
 }
 function shareToLinkedIn(id) {
   window.open("https://www.linkedin.com/sharing/share-offsite/?url=" + encodeURIComponent(getUrl(id)), "_blank");
 }
 function shareToWhatsApp(id) {
   const a = articles.find(x => x.id === id);
-  const text = encodeURIComponent(a.title + " → " + getUrl(id));
-  window.open("https://wa.me/?text=" + text, "_blank");
+  window.open("https://wa.me/?text=" + encodeURIComponent(a.title + " → " + getUrl(id)), "_blank");
 }
 function copyLink(id) {
   navigator.clipboard.writeText(getUrl(id)).then(() => showToast("🔗 Lien copié !"));
@@ -549,13 +384,8 @@ function renderArticles() {
         <h2 class="card-title">${a.title}</h2>
         <p class="card-excerpt">${a.excerpt}</p>
         <div class="card-footer">
-          <div class="card-stats">
-            <span>👁 ${a.views}</span>
-            <span>🔁 ${a.shares}</span>
-          </div>
-          <div class="card-tags">
-            ${a.tags.slice(0,2).map(t => `<span class="tag">#${t}</span>`).join("")}
-          </div>
+          <div class="card-stats"><span>👁 ${a.views}</span><span>🔁 ${a.shares}</span></div>
+          <div class="card-tags">${a.tags.slice(0,2).map(t => `<span class="tag">#${t}</span>`).join("")}</div>
         </div>
       </div>
     </article>
@@ -580,19 +410,17 @@ function clearSearch() {
 }
 
 // ===================================================
-// Init
+// Init — charge d'abord les articles générés par IA
 // ===================================================
-document.addEventListener("DOMContentLoaded", () => {
+function initApp() {
   renderHero();
   renderArticles();
 
-  // Category tabs
   document.getElementById("categoryTabs").addEventListener("click", e => {
     const el = e.target.closest("[data-filter]");
     if (el) setFilter(el.dataset.filter);
   });
 
-  // Nav links
   document.querySelectorAll(".nav-link[data-filter]").forEach(link => {
     link.addEventListener("click", e => {
       e.preventDefault();
@@ -601,38 +429,46 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Search
   document.getElementById("searchInput").addEventListener("input", e => {
     currentSearch = e.target.value;
     renderArticles();
   });
 
-  // Theme toggle
   document.getElementById("themeToggle").addEventListener("click", () => {
     isDark = !isDark;
     document.documentElement.setAttribute("data-theme", isDark ? "dark" : "light");
     document.getElementById("themeToggle").textContent = isDark ? "🌙" : "☀️";
   });
 
-  // Modal close
   document.getElementById("modalClose").addEventListener("click", closeModal);
   document.getElementById("modalOverlay").addEventListener("click", e => {
     if (e.target === document.getElementById("modalOverlay")) closeModal();
   });
   document.addEventListener("keydown", e => { if (e.key === "Escape") closeModal(); });
 
-  // Newsletter
   document.getElementById("newsletterForm").addEventListener("submit", e => {
     e.preventDefault();
-    const email = e.target.querySelector("input").value;
-    showToast("✅ " + email + " ajouté à la newsletter !");
+    showToast("✅ " + e.target.querySelector("input").value + " ajouté à la newsletter !");
     e.target.reset();
   });
 
-  // Open article from URL
   const slug = new URLSearchParams(window.location.search).get("article");
   if (slug) {
     const a = articles.find(x => x.slug === slug);
     if (a) openArticle(a.id);
   }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Charger les articles générés par l'IA, puis initialiser
+  fetch("data/generated.json")
+    .then(r => r.json())
+    .then(generated => {
+      if (generated.length > 0) {
+        // Fusionner : articles générés en premier (les plus récents)
+        articles = [...generated, ...articles];
+      }
+    })
+    .catch(() => {})
+    .finally(() => initApp());
 });
