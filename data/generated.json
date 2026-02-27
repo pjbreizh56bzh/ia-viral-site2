@@ -1,5 +1,25 @@
 [
   {
+    "id": 102,
+    "slug": "gpt-5-ce-qu-on-sait-vraiment-et-ce-qu-on-te-cache",
+    "title": "GPT-5 : ce qu'on sait vraiment (et ce qu'on te cache)",
+    "excerpt": "OpenAI prépare GPT-5 en silence. Les fuites internes révèlent des capacités qui vont tout changer. Voici ce que les insiders disent.",
+    "content": "<p>GPT-5 est en cours de développement et les rumeurs qui circulent en interne chez OpenAI sont bouleversantes. Des chercheurs qui ont quitté l'entreprise ont commencé à parler.</p><h3>Ce que les fuites révèlent</h3><ul><li><strong>Raisonnement multi-étapes</strong> — GPT-5 résoudrait des problèmes mathématiques de niveau olympiade sans aide externe</li><li><strong>Mémoire persistante</strong> — Il se souviendrait de toi d'une session à l'autre, comme un vrai assistant personnel</li><li><strong>Autonomie d'action</strong> — Capable de naviguer sur le web, d'écrire du code et de l'exécuter seul</li><li><strong>Multimodalité avancée</strong> — Vidéo, audio, texte, code : tout en un seul modèle</li></ul><h3>Pourquoi OpenAI reste silencieux</h3><p>La stratégie d'OpenAI est claire : ne rien annoncer avant d'être prêt à déployer. La leçon de GPT-4 — annoncé des mois avant sa sortie — a créé des attentes impossibles à satisfaire. Cette fois, le modèle sera <strong>lancé sans préavis</strong>.</p><h3>L'impact sur le marché</h3><p>Goldman Sachs estime que GPT-5 pourrait automatiser 25% supplémentaires de tâches cognitives par rapport à GPT-4. Pour les travailleurs du savoir, cela signifie une refonte complète de leurs outils quotidiens.</p><h3>Quand ?</h3><p>Les signaux pointent vers <strong>mi-2026</strong>. Certains insiders parlent même d'une version «&nbsp;surprise&nbsp;» avant l'été. Une chose est sûre : si tu n'as pas encore adopté les outils IA actuels, tu as intérêt à t'y mettre maintenant — avant que GPT-5 ne rende la courbe d'apprentissage encore plus raide.</p><blockquote>\"GPT-5 sera à GPT-4 ce que GPT-4 était à GPT-2.\" — ancien chercheur OpenAI (anonyme)</blockquote>",
+    "category": "ia",
+    "categoryLabel": "Intelligence Artificielle",
+    "readTime": 5,
+    "date": "27 févr. 2026",
+    "views": "5753",
+    "shares": "1271",
+    "image": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80",
+    "featured": false,
+    "tags": [
+      "gpt5",
+      "openai",
+      "ia"
+    ]
+  },
+  {
     "id": 101,
     "slug": "gpt-5-ce-qu-on-sait-vraiment-et-ce-qu-on-te-cache",
     "title": "GPT-5 : ce qu'on sait vraiment (et ce qu'on te cache)",
